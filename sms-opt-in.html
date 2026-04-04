@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epoch AI SMS Notifications SMS Opt-In</title>
+    <style>
+        :root {
+            --text: #24303a;
+            --muted: #5f6b76;
+            --border: #d8e0e6;
+            --panel: #f7f9fb;
+            --accent: #0a67c2;
+            --accent-dark: #084d90;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 760px;
+            margin: 40px auto;
+            padding: 0 20px 48px;
+            color: var(--text);
+            line-height: 1.6;
+        }
+        h1, h2 {
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 8px;
+        }
+        a { color: var(--accent); }
+        .brand { color: var(--muted); margin-top: -4px; }
+        .intro {
+            background: linear-gradient(180deg, #fbfcfd 0%, #f4f7fa 100%);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 22px;
+            margin: 22px 0 28px;
+        }
+        form {
+            background: var(--panel);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 22px;
+        }
+        label {
+            display: block;
+            font-weight: 600;
+            margin-top: 16px;
+            margin-bottom: 6px;
+        }
+        input[type="text"],
+        input[type="tel"] {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 12px 14px;
+            border: 1px solid #bcc8d2;
+            border-radius: 10px;
+            font: inherit;
+            color: inherit;
+            background: #fff;
+        }
+        .consent {
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+            margin-top: 18px;
+            padding: 14px;
+            background: #fff;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+        }
+        .consent input {
+            margin-top: 4px;
+            flex: 0 0 auto;
+        }
+        button {
+            margin-top: 18px;
+            padding: 12px 18px;
+            border: 0;
+            border-radius: 10px;
+            background: var(--accent);
+            color: #fff;
+            font: inherit;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        button:hover { background: var(--accent-dark); }
+        .note {
+            color: var(--muted);
+            font-size: 0.95em;
+        }
+    </style>
+</head>
+<body>
+    <h1>SMS Opt-In for Epoch AI SMS Notifications</h1>
+    <p class="brand">Epoch AI is operated by Travis Nasser.</p>
+
+    <div class="intro">
+        <p>Use this page to request SMS notifications from <strong>Epoch AI SMS Notifications</strong>. Submit your information and consent below to contact Epoch AI about enrolling your number for reminders, daily brief summaries, assistant updates, and personal alerts.</p>
+    </div>
+
+    <h2>SMS Consent Form</h2>
+    <form action="mailto:nassertravis@gmail.com" method="post" enctype="text/plain">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" autocomplete="name" placeholder="Your name">
+
+        <label for="mobile">Mobile number</label>
+        <input id="mobile" name="mobile" type="tel" autocomplete="tel" inputmode="tel" placeholder="(555) 555-5555">
+
+        <label class="consent" for="sms-consent">
+            <input id="sms-consent" name="sms_consent" type="checkbox" required>
+            <span>By checking this box, you agree to receive recurring SMS messages from Epoch AI SMS Notifications for requested reminders, daily brief summaries, assistant updates, and personal alerts. Message frequency varies. Message and data rates may apply. Reply STOP to opt out and HELP for help. Review our <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms and Conditions</a>.</span>
+        </label>
+
+        <button type="submit">Submit Opt-In</button>
+    </form>
+
+    <p class="note">Submitting this form opens your default email application to send your opt-in request to Epoch AI for review and enrollment.</p>
+    <p class="note">Messages are sent only to users who have opted in. Epoch AI does not use purchased or rented lists. This SMS program is informational and transactional in nature, not a marketing campaign.</p>
+
+    <p><a href="index.html">← Back</a></p>
+</body>
+</html>
