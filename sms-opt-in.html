@@ -94,7 +94,7 @@
     <p class="brand">Epoch AI is operated by Travis Nasser.</p>
 
     <div class="intro">
-        <p>Use this page to request SMS notifications from <strong>Epoch AI SMS Notifications</strong>. Submit your information and consent below to contact Epoch AI about enrolling your number for reminders, daily brief summaries, assistant updates, and personal alerts.</p>
+        <p>Use this page to optionally sign up for SMS notifications from <strong>Epoch AI SMS Notifications</strong>. Providing consent below is entirely voluntary. The Epoch AI assistant service is available without enrolling in SMS. SMS is an optional add-on only.</p>
     </div>
 
     <h2>SMS Consent Form</h2>
@@ -105,12 +105,12 @@
         <label for="mobile">Mobile number</label>
         <input id="mobile" name="mobile" type="tel" autocomplete="tel" inputmode="tel" placeholder="(555) 555-5555">
 
-        <label class="consent" for="sms-consent">
-            <input id="sms-consent" name="sms_consent" type="checkbox" required>
-            <span>By checking this box, you agree to receive recurring SMS messages from Epoch AI SMS Notifications for requested reminders, daily brief summaries, assistant updates, and personal alerts. Message frequency varies. Message and data rates may apply. Reply STOP to opt out and HELP for help. Review our <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms and Conditions</a>.</span>
-        </label>
+        <div class="consent">
+            <input id="sms-consent" name="sms_consent" type="checkbox">
+            <label for="sms-consent" style="font-weight:normal;margin:0;"><strong>Optional:</strong> By checking this box, I voluntarily agree to receive recurring SMS messages from Epoch AI SMS Notifications for requested reminders, daily brief summaries, assistant updates, and personal alerts. Checking this box is not required and is not a condition of using Epoch AI. Message frequency varies. Message and data rates may apply. Reply STOP to opt out and HELP for help. See our <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms and Conditions</a>. Consent to receive text messages is not required as a condition of service.</label>
+        </div>
 
-        <button type="submit">Submit Opt-In</button>
+        <button type="submit">Submit Request</button>
     </form>
 
     <p class="note">Submitting this form opens your default email application to send your opt-in request to Epoch AI for review and enrollment.</p>
